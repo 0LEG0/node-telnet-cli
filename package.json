@@ -1,0 +1,18 @@
+{
+  "name": "node-telnet-cli",
+  "version": "0.1.0",
+  "description": "Node.js telnet server with command line interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telnet",
+    "cli"
+  ],
+  "dependencies": {
+    "telnet": "github:0LEG0/telnet.js"
+  },
+  "author": "0LEG0 <a.i.s@gmx.com>",
+  "license": "Apache-2.0"
+}
