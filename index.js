@@ -1,3 +1,10 @@
+/**
+ * @description Telnet CLI for node.js applications
+ * @author 0LEG0 <a.i.s@gmx.com>
+ * @version 0.1.1
+ * @license Apache-2.0
+ * @see https://github.com/0LEG0/node-telnet-cli
+ */
 "use strict";
 
 const telnet = require("telnet");
@@ -79,6 +86,7 @@ function connectionListener(c, listener) {
                 // Autocomplete
                 c.emit("partline", line);
                 break;
+            case "enter":
             case "return":
                 telnet.seq().nextline.a(prompt).send(c);
                 //console.log("Line:", line);
